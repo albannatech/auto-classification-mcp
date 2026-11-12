@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "auto-classification-mcp"
-version = "0.0.0"
+version = "0.1.0"
 description = "Route tickets, tag leads, categorise expenses — the reference extension for classification that proposes and never mutates."
 readme = "README.md"
 requires-python = ">=3.10"

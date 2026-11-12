@@ -7,6 +7,8 @@ and the app uses [semantic versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+## [0.1.0] — 2026-11-12
+
 ### Added
 
 **The reference extension for classification that proposes and never mutates.**
@@ -49,3 +51,4 @@ the absence being the decision.
   label, an empty label, or a confidence under the threshold all mean review.
 - **Override is a first-class feature.** The reader's reason is kept as a
   labelled example, which is the only way this extension improves.
+
