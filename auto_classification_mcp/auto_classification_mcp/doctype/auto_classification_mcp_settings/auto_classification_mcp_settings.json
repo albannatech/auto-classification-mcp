@@ -1,0 +1,20 @@
+{
+  "actions": [], "creation": "2026-11-12 00:00:00", "doctype": "DocType", "editable_grid": 1,
+  "engine": "InnoDB",
+  "field_order": ["provider", "model", "labels_by_doctype", "fields_by_doctype", "target_field_by_doctype", "auto_accept", "confidence_threshold", "never_auto_fields"],
+  "fields": [
+    {"fieldname": "provider", "fieldtype": "Data", "label": "Provider"},
+    {"fieldname": "model", "fieldtype": "Data", "label": "Model"},
+    {"description": "One line per DocType: <code>Issue: billing, technical, other</code>. Empty until an operator writes it.", "fieldname": "labels_by_doctype", "fieldtype": "Small Text", "label": "Labels By DocType"},
+    {"description": "One line per DocType: <code>Issue: customer, subject, description</code>", "fieldname": "fields_by_doctype", "fieldtype": "Small Text", "label": "Fields By DocType"},
+    {"description": "One line per DocType: <code>Issue: category</code>", "fieldname": "target_field_by_doctype", "fieldtype": "Small Text", "label": "Target Field By DocType"},
+    {"default": "0", "description": "Off by default. The gate fails closed.", "fieldname": "auto_accept", "fieldtype": "Check", "label": "Auto Accept Above Threshold"},
+    {"default": "0.85", "description": "Only meaningful when Auto Accept is on.", "fieldname": "confidence_threshold", "fieldtype": "Float", "label": "Confidence Threshold"},
+    {"description": "Labels that may never be auto-accepted, whatever the confidence.", "fieldname": "never_auto_fields", "fieldtype": "Small Text", "label": "Never Auto Accept"}
+  ],
+  "index_web_pages_for_search": 1, "issingle": 1, "links": [],
+  "modified": "2026-11-12 00:00:00", "modified_by": "Administrator",
+  "module": "Auto Classification MCP", "name": "Auto Classification MCP Settings", "owner": "Administrator",
+  "permissions": [{"create": 1, "delete": 1, "email": 1, "print": 1, "read": 1, "role": "System Manager", "share": 1, "write": 1}],
+  "sort_field": "modified", "sort_order": "DESC", "states": [], "track_changes": 1
+}

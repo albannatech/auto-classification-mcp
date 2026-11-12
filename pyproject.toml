@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "auto-classification-mcp"
+version = "0.0.0"
+description = "Route tickets, tag leads, categorise expenses — the reference extension for classification that proposes and never mutates."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Albanna Software Solutions", email = "ahmedalbanna966@gmail.com" }]
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest>=7.0"]
+
+[tool.setuptools.packages.find]
+include = ["auto_classification_mcp*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = [".", "../albanna-ai-chat"]
+addopts = "-q"

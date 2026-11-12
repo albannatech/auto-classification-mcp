@@ -1,0 +1,26 @@
+{
+  "actions": [], "creation": "2026-11-12 00:00:00", "doctype": "DocType", "editable_grid": 1,
+  "engine": "InnoDB",
+  "field_order": ["target_doctype", "target_name", "target_field", "label", "confidence", "status", "model_version", "prompt_version", "prior_value", "override_reason", "purpose"],
+  "fields": [
+    {"fieldname": "target_doctype", "fieldtype": "Link", "in_list_view": 1, "label": "Target DocType", "options": "DocType"},
+    {"fieldname": "target_name", "fieldtype": "Data", "in_list_view": 1, "label": "Target Name"},
+    {"fieldname": "target_field", "fieldtype": "Data", "label": "Target Field"},
+    {"fieldname": "label", "fieldtype": "Data", "in_list_view": 1, "label": "Label"},
+    {"description": "Null when the model gave none. A classification with no confidence waits for a person.", "fieldname": "confidence", "fieldtype": "Float", "label": "Confidence"},
+    {"default": "draft", "fieldname": "status", "fieldtype": "Select", "in_list_view": 1, "label": "Status", "options": "draft\napplied\nreverted\noverridden"},
+    {"fieldname": "model_version", "fieldtype": "Data", "label": "Model Version"},
+    {"fieldname": "prompt_version", "fieldtype": "Data", "label": "Prompt Version"},
+    {"description": "What the field was before applying, so a revert is a real inverse.", "fieldname": "prior_value", "fieldtype": "Data", "label": "Prior Value"},
+    {"description": "The reader's reason, kept as a labelled example of what was wrong.", "fieldname": "override_reason", "fieldtype": "Small Text", "label": "Override Reason"},
+    {"fieldname": "purpose", "fieldtype": "Small Text", "label": "Purpose"}
+  ],
+  "index_web_pages_for_search": 1, "links": [],
+  "modified": "2026-11-12 00:00:00", "modified_by": "Administrator",
+  "module": "Auto Classification MCP", "name": "Classification", "owner": "Administrator",
+  "permissions": [
+    {"create": 1, "delete": 1, "email": 1, "print": 1, "read": 1, "role": "Auto Classification MCP User", "share": 1, "write": 1},
+    {"create": 1, "delete": 1, "email": 1, "print": 1, "read": 1, "role": "System Manager", "share": 1, "write": 1}
+  ],
+  "sort_field": "modified", "sort_order": "DESC", "states": [], "track_changes": 1
+}
