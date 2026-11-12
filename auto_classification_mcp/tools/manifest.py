@@ -286,4 +286,4 @@ TIERS = {
 #: draft-then-promote gate this extension depends on.  Classification is queued
 #: work with a privilege snapshot, and its output is a proposal a person or an
 #: operator rule disposes of.  An earlier core has neither.
-REQUIRES_CORE = ">=0.3.0,<0.4.0"
+REQUIRES_CORE = ">=0.4.0,<0.5.0"
